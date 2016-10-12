@@ -1825,7 +1825,7 @@ table#time-report tbody tr.total {
 }
 
 div.wiki-page {
-  &:after {
+  &:before {
     content: "";
     display: table;
     clear: both;
