@@ -6016,7 +6016,7 @@ table#time-report tbody tr.total {
   background-color: #EEEEEE;
   border-top: 1px solid #e4e4e4; }
 
-div.wiki-page:after {
+div.wiki-page:before {
   content: "";
   display: table;
   clear: both; }
