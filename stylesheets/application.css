@@ -14,7 +14,7 @@ html {
     opacity: 0; }
   100% {
     opacity: 1; } }
-@-moz-keyframes fadeIn {#header #quick-search #q:active
+@-moz-keyframes fadeIn {
   0%, 50% {
     opacity: 0; }
   100% {
@@ -4976,7 +4976,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #wrapper::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
 
 #top-menu {
   display: block;
@@ -4990,7 +4990,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #top-menu::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
   #top-menu ul.menu-children {
     width: 26em;
     top: 99%;
@@ -5079,7 +5079,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #header::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
   #header h1 {
     margin: 0;
     font-size: 1.5em;
@@ -5158,7 +5158,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #main-menu::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
   #main-menu ul.menu-children {
     background: #CCCCCC;
     display: none;
@@ -5213,7 +5213,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #main::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
   #main.nosidebar #content {
     float: left;
     display: block;
@@ -5302,8 +5302,6 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
         top: 0.8em;
         float: left;
         margin-right: 0.1em; }
-      #main #content .contextual ~ .wiki-page > .toc:first-child {
-        margin-top: 3.75em }
       #main #content .contextual a:before, #main #content .contextual .icon-add.checklist-new-only:before {
         margin-left: 1em; }
     #main #content h2:first-of-type {
@@ -5335,7 +5333,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   #footer::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
 
 /* Admin index */
 #admin-index #admin-menu li {
@@ -6018,6 +6016,10 @@ table#time-report tbody tr.total {
   background-color: #EEEEEE;
   border-top: 1px solid #e4e4e4; }
 
+div.wiki-page:after {
+  content: "";
+  display: table;
+  clear: both; }
 div.wiki-page .contextual a, div.wiki-page .contextual .icon-add.checklist-new-only {
   opacity: 0.4; }
 
@@ -6239,7 +6241,7 @@ p.other-formats {
   p.other-formats::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
 
 .other-formats span + span:before {
   content: "| "; }

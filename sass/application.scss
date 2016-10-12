@@ -1824,8 +1824,15 @@ table#time-report tbody tr.total {
   border-top: 1px solid #e4e4e4;
 }
 
-div.wiki-page .contextual a {
-  opacity: 0.4;
+div.wiki-page {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .contextual a {
+    opacity: 0.4;
+  }
 }
 
 form .attributes select {
