@@ -5862,7 +5862,10 @@ abbr {
 textarea.wiki-edit {
   width: 99% !important;
   resize: vertical;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-size: 0.65rem;
+  line-height: 0.7rem;
+  height: 70vh; }
 
 div.issue {
   background: #F9F9F9 !important;
