@@ -1829,7 +1829,12 @@ table#time-report tbody tr.total {
 
 div.wiki-page {
   max-width: 46rem;
-  margin: 0 auto;
+  margin-right: auto;
+
+  .sidebar-collapsed & {
+      margin-left: auto;
+  }
+
   &:before {
     content: "";
     display: table;

@@ -6104,7 +6104,9 @@ table#time-report tbody tr.total {
 
 div.wiki-page {
   max-width: 46rem;
-  margin: 0 auto; }
+  margin-right: auto; }
+  .sidebar-collapsed div.wiki-page {
+    margin-left: auto; }
   div.wiki-page:before {
     content: "";
     display: table;
