@@ -1,0 +1,142 @@
+@import "variables";
+
+$baseline: 20px;
+
+$minScreen: 400px;
+$maxScreen: 900px;
+$minFont: .8rem;
+$maxFont: 2rem;
+
+$h1: 2.6;
+$h2: 2.0;
+$h3: 1.25;
+$h4: 1;
+$h5: .875;
+
+@mixin fluid-type($size) {
+    font-size: 1rem * $size;
+    line-height: 1rem * ceil($size + 0.1);
+}
+
+@mixin fluid-header($size) {
+    @include fluid-type($size);
+    margin-top: 1rem * ceil($size);
+    margin-bottom: 1rem;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-size: $baseline;
+}
+
+body {
+    @include fluid-type(0.8);
+}
+
+p{
+    margin-bottom: $baseline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    color: $dark-blue;
+    font-weight: 700;
+    // margin-bottom: $baseline;
+}
+
+h1 {
+    @include fluid-header(2.0);
+    margin-top: 1rem;
+}
+
+h2, .wiki h1 {
+    @include fluid-header(1.8);
+}
+.wiki h1 {
+    margin-top: 1rem;
+}
+
+h3, .wiki h2 {
+    @include fluid-header(1.4);
+}
+
+h4, .wiki h3 {
+    @include fluid-header(1.0);
+}
+
+h5 {
+    @include fluid-header(0.8);
+}
+
+.contextual {
+    font-size: 0.7rem;
+}
+
+
+#content {
+    h1:first-child,
+    a:first-child + h1 {
+        margin-top: 0;
+    }
+    // h2:first-of-type {
+    h1 + h2,
+    h1 + a + h2,
+    h1 + .contextual + h2,
+    h1 + .contextual + a + h2 {
+        font-weight: 400;
+        border-bottom: 1px solid $medium-grey;
+        margin: 0 0 1.2em;
+        padding: 0.7em 0;
+
+        .live_search {
+            margin-left: 1em;
+        }
+    }
+}
+
+
+
+
+// @function fluid-measure($min-value, $max-value) {
+//     @return calc( $min-value + ($max-value - $min-value) * (100vw - $minScreen) / (strip-unit($maxScreen) - strip-unit($minScreen)) )
+// }
+//
+// @mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+//     @each $property in $properties {
+//         #{$property}: calc( $min-value + ($max-value - $min-value) * (100vw - $min-vw) / (strip-unit($max-vw) - strip-unit($min-vw)) );
+//     }
+// }
+//
+// @mixin fluid-margin($property, $min-vw, $max-vw, $min-value, $max-value) {
+//     #{$property}:
+// }
+
+// @mixin fluid-type($properties, $min-vw, $max-vw, $min-value, $max-value) {
+//     & {
+//         @each $property in $properties {
+//             #{$property}: $min-value;
+//         }
+//
+//         @media screen and (min-width: $min-vw) {
+//             @each $property in $properties {
+//                 #{$property}: calc(#{$min-value} + #{strip-unit($max-value - $min-value)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+//             }
+//         }
+//
+//         @media screen and (min-width: $max-vw) {
+//             @each $property in $properties {
+//                 #{$property}: $max-value;
+//             }
+//         }
+//     }
+// }
+//
+// @function strip-unit($value) {
+//     @return $value / ($value * 0 + 1);
+// }

@@ -2,27 +2,44 @@
 $max-width: 80em;
 
 /* Color variables */
-$blue: #446E9B;
-$dark-blue: #474D57;
-$light-blue: #66AFE9;
+// $blue: #446E9B;
+// $dark-blue: #474D57;
+// $light-blue: #66AFE9;
+// $blue-green: #019875;
+// $white: #F9F9F9;
+// $light-grey: #F2F2F2;
+// $medium-grey: #CCCCCC;
+// $grey-blue: #979DA7;
+// $grey: #777777;
+// $orange: #f39c12;
+// $red: #e74c3c;
+// $green: #2ecc71;
+// $yellow: #f1c40f;
+// $text: #333333;
+
+/* EnergySavvy color variables */
+$blue: #8196B0;
+$dark-blue: #415267;
+$light-blue: #1893E5;
 $blue-green: #019875;
 $white: #F9F9F9;
 $light-grey: #F2F2F2;
 $medium-grey: #CCCCCC;
 $grey-blue: #979DA7;
 $grey: #777777;
-$orange: #f39c12;
+$orange: #FA8431;
 $red: #e74c3c;
-$green: #2ecc71;
+$green: #8ED361;
 $yellow: #f1c40f;
+$black: #2D2E2D;
 $text: #333333;
 
 /* UI colors, moved here to allow easier override */
 
-$buttons-static-bg: $blue-green;
+$buttons-static-bg: $light-blue;
 $buttons-static-fg: white;
 $buttons-static-border: $buttons-static-bg;
-$buttons-hover-bg: $buttons-static-bg;
+$buttons-hover-bg: $green;
 $buttons-hover-fg: $buttons-static-fg;
 
 $link-color: $blue;
