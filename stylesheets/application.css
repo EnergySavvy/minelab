@@ -6686,14 +6686,24 @@ div.wiki .external {
   background-image: url(../images/external.png); }
 div.wiki a.new, div.wiki .new.icon-add.checklist-new-only {
   color: #b73535; }
-div.wiki pre {
+div.wiki pre,
+div.wiki code {
   background-color: #fafafa;
-  border: 1px solid #e2e2e2;
+  border: 1px solid #e2e2e2; }
+div.wiki code {
+  padding: 2px 5px;
+  line-height: calc(1rem + 5px); }
+div.wiki pre {
   width: auto;
   overflow-x: auto;
   overflow-y: hidden;
   margin: 1em 1em 1em 1.6em;
-  padding: 8px; }
+  padding: 0.5rem 0.65rem; }
+  div.wiki pre code {
+    padding: 0;
+    background: none;
+    border: none;
+    line-height: inherit; }
 div.wiki ul.toc {
   background-color: #ffffdd;
   border: 1px solid #e4e4e4;
