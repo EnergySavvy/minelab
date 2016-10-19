@@ -6691,8 +6691,9 @@ div.wiki code {
   background-color: #fafafa;
   border: 1px solid #e2e2e2; }
 div.wiki code {
-  padding: 2px 5px;
-  line-height: calc(1rem + 5px); }
+  padding: 1px 5px;
+  line-height: 1.1rem;
+  line-height: calc(1rem + 2px); }
 div.wiki pre {
   width: auto;
   overflow-x: auto;

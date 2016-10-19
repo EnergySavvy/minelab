@@ -2603,8 +2603,9 @@ div.wiki {
       border: 1px solid #e2e2e2;
     }
     code {
-        padding: 2px 5px;
-        line-height: calc(1rem + 5px);
+        padding: 1px 5px;
+        line-height: 1.1rem;
+        line-height: calc(1rem + 2px);
     }
     pre {
       width: auto;
