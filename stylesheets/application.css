@@ -6105,17 +6105,23 @@ table#time-report tbody tr.total {
   background-color: #EEEEEE;
   border-top: 1px solid #e4e4e4; }
 
-div.wiki-page {
+div.wiki {
   max-width: 46rem;
   margin-right: auto; }
-  .sidebar-collapsed div.wiki-page {
+  .sidebar-collapsed div.wiki {
     margin-left: auto; }
-  div.wiki-page:before {
+  div.wiki:before {
     content: "";
     display: table;
     clear: both; }
-  div.wiki-page .contextual a, div.wiki-page .contextual .icon-add.checklist-new-only {
+  div.wiki .contextual a, div.wiki .contextual .icon-add.checklist-new-only {
     opacity: 0.4; }
+  div.wiki ol ol {
+    list-style-type: lower-alpha; }
+    div.wiki ol ol ol {
+      list-style-type: lower-roman; }
+      div.wiki ol ol ol ol {
+        list-style-type: decimal; }
 
 form .attributes select {
   width: 60%; }
@@ -7372,7 +7378,7 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
 .syntaxhl .string .char, .syntaxhl .string .content, .syntaxhl .string .delimiter, .syntaxhl .string .modifier {
   color: #46a; }
 
-.syntaxhl .symbol .content, .syntaxhl .symbol .delimiter, .syntaxhl .symbol {
+.syntaxhl .symbol .content, .syntaxhl .symbol .delimiter, .syntaxhl .symb {
   color: #d33; }
 
 .icon-contact {

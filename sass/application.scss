@@ -1830,7 +1830,7 @@ table#time-report tbody tr.total {
   border-top: 1px solid #e4e4e4;
 }
 
-div.wiki-page {
+div.wiki {
   max-width: 46rem;
   margin-right: auto;
 
@@ -1845,6 +1845,18 @@ div.wiki-page {
   }
   .contextual a {
     opacity: 0.4;
+  }
+
+  ol {
+      ol {
+          list-style-type: lower-alpha;
+          ol {
+              list-style-type: lower-roman;
+              ol {
+                  list-style-type: decimal;
+              }
+          }
+      }
   }
 }
 
@@ -3677,7 +3689,8 @@ textarea#custom_field_possible_values, textarea#custom_field_default_value, .tab
   color: #46a;
 }
 
-.syntaxhl .symbol .content, .syntaxhl .symbol .delimiter, .syntaxhl .symbol {
+.syntaxhl .symbol .content, .syntaxhl .symbol .delimiter, .syntaxhl .symb
+{
   color: #d33;
 }
 
