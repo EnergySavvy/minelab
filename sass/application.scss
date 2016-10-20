@@ -724,6 +724,7 @@ select {
 
   #sidebar {
     @include span-columns(3);
+    max-width: 280px;
 
     padding-top: 1em;
 
