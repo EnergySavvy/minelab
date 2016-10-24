@@ -1,0 +1,26 @@
+p {
+    // a single italic paragraph
+    > em:only-child,
+    > strong:only-child {
+        display: block;
+        padding: 1rem;
+        margin: 0 1rem;
+    }
+    > em:only-child {
+        border: 2px solid $blue;
+        font-style: normal;
+
+        em {
+            font-style: italic;
+        }
+    }
+    // a single bold paragraph
+    > strong:only-child {
+        border: 2px solid $red;
+        font-weight: normal;
+
+        strong {
+            font-weight: bold;
+        }
+    }
+}

@@ -1,5 +1,3 @@
-@import "variables";
-
 $baseline: 20px;
 
 $minScreen: 400px;
@@ -36,7 +34,7 @@ body {
     @include fluid-type(0.8);
 }
 
-p{
+p {
     margin-bottom: $baseline;
 }
 

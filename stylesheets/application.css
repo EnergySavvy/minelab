@@ -4712,26 +4712,6 @@ div.members h3:before {
   100% {
     transform: rotate(360deg);
     transform: rotate(360deg); } }
-/* Framework variables */
-/* Color variables */
-/* EnergySavvy color variables */
-/* UI colors, moved here to allow easier override */
-/* Animations */
-@-webkit-keyframes fadeIn {
-  0%, 50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-moz-keyframes fadeIn {
-  0%, 50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@keyframes fadeIn {
-  0%, 50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 html {
   box-sizing: border-box;
   height: 100%;
@@ -4897,6 +4877,22 @@ li.change.change-D {
   font-size: 0.9em !important; }
 .jstElements .jstb_h3:before {
   font-size: 0.8em !important; }
+
+p > em:only-child,
+p > strong:only-child {
+  display: block;
+  padding: 1rem;
+  margin: 0 1rem; }
+p > em:only-child {
+  border: 2px solid #8196B0;
+  font-style: normal; }
+  p > em:only-child em {
+    font-style: italic; }
+p > strong:only-child {
+  border: 2px solid #e74c3c;
+  font-weight: normal; }
+  p > strong:only-child strong {
+    font-weight: bold; }
 
 .pagination-wrapper {
   clear: both; }
