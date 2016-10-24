@@ -1,3 +1,7 @@
+// This doesn't quite work because only-child will include blocks that
+// have sibling text, i. e.
+//     <p><em>blah</em> bleh<p>
+
 p {
     // a single italic paragraph
     > em:only-child,
